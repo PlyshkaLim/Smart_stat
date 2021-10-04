@@ -1,0 +1,15 @@
+.header {
+    width: 1175px;
+margin: 0 auto;
+
+    border: 1px solid red;
+}
+
+.form {
+    width: 337px;
+    margin: 0 auto;
+}
+.footer {
+    width: 166px;
+    margin: 0 auto;
+}
