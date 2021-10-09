@@ -1,0 +1,72 @@
+.registration {
+    display: grid;
+    /*grid-template-columns: 28vw 15vw 26vw 30vw;*/
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 500px 50px;
+    grid-template-areas: "header"
+    "form"
+    "footer";
+    grid-gap: 0;
+}
+
+.header {
+    grid-area: header;
+    width: 1175px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    font-size: 50px;
+}
+.form {
+    grid-area: form;
+}
+/*
+.previous {
+    grid-area: previous;
+
+}
+
+.form {
+    grid-area: form;
+    width: 337px;
+
+}
+
+.number {
+    grid-area: number;
+    justify-self: end;
+    margin: 0 30px 0 0;
+}
+
+.regText {
+    font-size: 48px;
+    color: #6A8CAF;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+}
+
+.next {
+    grid-area: next;
+}
+*/
+.footer {
+    grid-area: footer;
+    width: 166px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.linkLogIn {
+    text-decoration: none;
+    color: #A7E9AF;
+    font-family: SF Pro Display, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+}

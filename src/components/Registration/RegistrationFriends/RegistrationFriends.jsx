@@ -1,39 +1,32 @@
 import React from "react";
 import p from "./RegistrationFriends.module.css";
+import numberThree from "../../../images/3.png";
 import {NavLink} from "react-router-dom";
+import Previous from "../../common/Previous";
+import Next from "../../common/Next";
+
 
 const RegistrationFriends = () => {
     return (
         <div className={p.registration}>
-            <div className={p.header}>
-                1 Общие данные
-                2 О спорте
-                3 Друзья
-            </div>
-            <div>
-                <NavLink to='/registrationSport'>
-                    Previous
+            <div className={p.previous}>
+                <NavLink to='/registration/registrationSport'>
+                    <Previous/>
                 </NavLink>
             </div>
-            3
-            <br/>
+            <div className={p.number}>
+                <img src={numberThree} alt={"numberThree"}/>
+            </div>
             <div className={p.form}>
-                РЕГИСТРАЦИЯ<br/>
-                Найди друзей!
-                <div className={p.q}><input type="text" placeholder="Введите никнейм"/></div>
+                <div className={p.regText}>РЕГИСТРАЦИЯ</div>
+                <div className={p.form}>
+                    Найди друзей!
+                    <div className={p.formField}><input type="text" placeholder="Введите никнейм"/></div>
+                </div>
             </div>
-
-            <div>
-                <NavLink to='/'>
-                    Next
-                </NavLink>
-
-            </div>
-            <div className={p.footer}>
-                Уже есть аккаунт?
-                <br/>
-                <NavLink to="/authorizationCommonInf">
-                    Войти
+            <div className={p.next}>
+                <NavLink to='/main_page'>
+                    <Next/>
                 </NavLink>
             </div>
         </div>

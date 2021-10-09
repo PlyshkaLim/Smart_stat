@@ -1,8 +1,86 @@
 .authorization {
-    width: 276px;
-    margin: 0 auto;
+    width: 290px;
+    /*height: 250px;*/
+    margin: 10% 40% 0 40%;
 }
 
 .logo {
-    color: red;
+    margin: 0 0 25px 0;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+}
+
+.logoFirstPart {
+    color: #A7E9AF;
+}
+
+.logoSecondPart {
+    color: #6A8CAF;
+}
+
+.form {
+    margin: 0 0 0 0;
+}
+
+.formField {
+    margin: 0 0 15px 0;
+}
+
+.formField input {
+    height: 33px;
+    width: 285px;
+    box-shadow: 0 0 6px #DFDFDF;
+    border: 0;
+    border-radius: 10px;
+}
+
+.q {
+    font-family: SF Pro Display, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #ADADAD;
+    margin: 0 0 15px 0;
+}
+
+.buttonLogIn {
+    width: 290px;
+    height: 32px;
+    background-color: #A7E9AF;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 15px 0;
+}
+
+.buttonLogIn a {
+    width: auto;
+    height: auto;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: SF Pro Display, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.buttonReg {
+    width: 290px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonReg a {
+    width: auto;
+    height: auto;
+    text-decoration: none;
+    color: #A7E9AF;
+    font-family: SF Pro Display, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
 }

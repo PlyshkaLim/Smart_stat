@@ -1,3 +1,10 @@
 .app {
     font-size: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
 }

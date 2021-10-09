@@ -1,0 +1,12 @@
+.mainPage {
+    font-family: sans-serif;
+    height: 100vh;
+
+}
+
+.content {
+    text-align: center;
+    overflow: auto;
+
+    border: 2px solid red;
+}

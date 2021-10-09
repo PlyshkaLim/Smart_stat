@@ -1,15 +1,47 @@
-.header {
-    width: 1175px;
-margin: 0 auto;
-
-    border: 1px solid red;
+.registration {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 28vw 15vw 26vw 30vw;
+    grid-template-areas: "previous number form next";
+    margin: 50px 0 0 0;
 }
-
+.previous {
+    justify-self: end;
+}
+.number {
+    justify-self: end;
+}
 .form {
+    grid-area: form;
     width: 337px;
     margin: 0 auto;
 }
-.footer {
-    width: 166px;
-    margin: 0 auto;
+
+.regText {
+    font-size: 48px;
+    color: #6A8CAF;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+}
+
+.formField {
+    margin: 0 0 18px 0;
+}
+
+.formField input {
+    height: 33px;
+    width: 273px;
+    box-shadow: 0 0 6px #DFDFDF;
+    border: 0;
+    border-radius: 10px;
+}
+
+.hints {
+    font-family: SF Pro Display, sans-serif;
+    font-size: 12px;
+    color: #ADADAD;
+}
+.next {
+    grid-area: next;
 }

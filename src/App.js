@@ -1,23 +1,22 @@
-import './App.css';
+import p from './App.css';
 import {
     BrowserRouter,
     Switch,
     Route, Redirect,
 } from 'react-router-dom';
 import Authorization from "./components/Authorization/Authorization";
-import RegistrationCommonInf from "./components/Registration/RegistrationCommonInf/RegistrationCommonInf";
-import RegistrationSport from "./components/Registration/RegistrationSport/RegistrationSport";
-import RegistrationFriends from "./components/Registration/RegistrationFriends/RegistrationFriends";
+import MainPage from "./components/MainPage/MainPage";
+import Registration from "./components/Registration/Registration";
 
 function App() {
     return (
         <BrowserRouter>
-            <div className="app">
+            <div className={p.app}>
                 <Switch>
                     <Route path="/authorization" component={Authorization}/>
-                    <Route path="/registrationCommonInf" component={RegistrationCommonInf}/>
-                    <Route path="/registrationSport" component={RegistrationSport}/>
-                    <Route path="/registrationFriends" component={RegistrationFriends}/>
+                    <Route path="/registration" component={Registration}/>
+
+                    <Route path="/main_page" component={MainPage}/>
                     <Redirect from="/" to="/authorization"/>
                 </Switch>
             </div>
