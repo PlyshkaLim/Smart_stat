@@ -27,13 +27,15 @@ class SideBar extends React.Component {
     render() {
         return (
             <div className={p.sideBar}>
-                <div className={this.state.qwe ? p.sidebarClose : p.sidebar }>
-                    <img src={logoClose}  alt={"logoClose"}/>
-                    <img src={logoOpen} hidden={this.state.qwe} alt={"logoOpen"}/>
+                <div className={this.state.qwe ? p.sidebarClose : p.sidebar}>
+                    <img src={logoClose} alt={"logoClose"} className={p.logoClose}/>
+                    <img src={logoOpen} hidden={this.state.qwe} alt={"logoOpen"} className={p.logoOpen}/>
                     <br/>
+
                     <button onClick={this.disableButton}
                             className={this.state.qwe ? p.open : p.close}>
                     </button>
+
                     <a className={p.active} href="#home">
                         <img src={homeIcon} alt={"homeIcon"}/>
                         <span hidden={this.state.qwe}>Главная страница</span>

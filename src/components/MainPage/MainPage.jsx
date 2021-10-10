@@ -10,7 +10,6 @@ const MainPage = () => {
             <SideBar/>
             <div className={p.content}>
                 MainPage Content<br/>
-
             </div>
         </div>
     )

@@ -15,7 +15,6 @@ function App() {
                 <Switch>
                     <Route path="/authorization" component={Authorization}/>
                     <Route path="/registration" component={Registration}/>
-
                     <Route path="/main_page" component={MainPage}/>
                     <Redirect from="/" to="/authorization"/>
                 </Switch>
