@@ -1,10 +1,45 @@
 .mainPage {
     font-family: sans-serif;
     height: 100vh;
+    /*display: grid;*/
+    /*grid-template-columns: 100px 1fr;*/
+    display: flex;
+    flex-direction: row;
 
 }
 
+.sideBar {
+    min-width: 90px;
+    max-width: 300px;
+}
+
 .content {
-    text-align: center;
+    /*text-align: center;*/
     /*overflow: auto;*/
+    margin: 10px;
+    border: 1px solid red;
+    /*width: 100vw;*/
+    flex: auto;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+}
+
+.navbar {
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+    padding: 30px 0 0 0;
+    border: 1px solid blue;
+}
+
+.navbar a {
+    margin: 0 auto;
+
+    color: #75B79E;
+}
+
+.activeLink {
+    color: red;
+    font-weight: bold;
+    text-decoration: underline;
 }

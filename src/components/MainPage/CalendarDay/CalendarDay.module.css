@@ -1,0 +1,61 @@
+.calendarDay {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    grid-template-rows: 200px 400px 1fr;
+    grid-template-areas: "buttonCreate calendarMap"
+    "calendar calendarMap"
+    "calendarGroup calendarMap";
+}
+
+.buttonCreate {
+    grid-area: buttonCreate;
+    border: 1px solid red;
+    font-family: Open Sans, sans-serif;
+}
+
+.buttonCreate button {
+    font-family: Open Sans, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 12px;
+    background: linear-gradient(90.07deg, #A7E9AF 2.1%, #6A8CAF 87.81%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
+    width: 166px;
+    height: 58px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    border: none;
+
+    margin: 20px 0 0 20px;
+}
+
+.calendar {
+    grid-area: calendar;
+}
+
+.calendarGroup {
+    grid-area: calendarGroup;
+    display: flex;
+    flex-direction: column;
+}
+
+.calendarGroup .item {
+    margin: 0 0 15px 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    /*grid-template-columns: 40px 1fr;*/
+}
+
+.calendarGroup .text {
+    align-self: center;
+    margin: 0 0 0 10px;
+}
+
+.calendarMap {
+    grid-area: calendarMap;
+}

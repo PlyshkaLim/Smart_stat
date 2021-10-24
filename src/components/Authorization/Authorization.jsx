@@ -16,7 +16,7 @@ const Authorization = () => {
                     Забыли пароль?
                 </div>
                 <div className={p.buttonLogIn}>
-                    <NavLink to="/main_page">
+                    <NavLink to="/calendar/Day">
                         Войти
                     </NavLink>
                 </div>

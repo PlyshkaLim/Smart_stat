@@ -1,6 +1,7 @@
-.sideBar {
+.sideBarOpen {
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 
 .logoClose {
@@ -11,8 +12,9 @@
     margin: 20px 0 20px 0;
 }
 
-button {
-    width: 25px;
+.sideBarOpen button,
+.sideBarClose button{
+    width: 50px;
     height: 25px;
     background-color: #75B79E;
     border: hidden;
@@ -29,31 +31,27 @@ button {
     background-image: url("../../images/arrowLeft.png");
 }
 
-.sidebar,
+.sidebarOpen,
 .sidebarClose {
     margin: 0;
     padding: 0;
     width: 270px;
     background-color: #75B79E;
-    position: fixed;
+    /*position: fixed;*/
     height: 100%;
     overflow: auto;
+
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
 }
 
 .sidebarClose {
-    width: 100px;
+    width: 90px;
 }
 
 /* Сайдбар ссылки */
-.sidebar a,
-.sidebarClose a {
-    /*display: block;
-    color: white;
-    padding: 16px;
-    text-decoration: none;
-    text-align: left;*/
+.sidebarOpen a,
+.sidebarClose a{
     display: grid;
     grid-template-columns: 50px 1fr;
     grid-template-rows: 50px;
@@ -62,28 +60,40 @@ button {
     color: #FFFFFF;
 }
 
+.sideBarClose {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+    border: 1px solid red;
+}
 /* Активная/текущая ссылка */
-.sidebar a.active,
+.sidebarOpen a.active,
 .sidebarClose a.active {
     background-color: #A7E9AF;
     /*color: #FFFFFF;*/
 }
 
 /* Ссылки при наведении мыши */
-.sidebar a:hover:not(.active) {
+.sidebarOpen a:hover:not(.active) {
     background-color: #A7E9AF;
     color: #FFFFFF;
 }
 
-a img {
+.sideBarOpen a img {
     margin: 0 10px 0 15px;
 }
 
 /* Содержание страницы. Значение свойства margin-left должно соответствовать значению свойства width боковой панели */
-div.content {
-    margin-left: 270px;
-    padding: 1px 16px;
-    height: 1000px;
+/*div.content {*/
+/*    margin-left: 270px;*/
+/*    padding: 1px 16px;*/
+/*    height: 1000px;*/
+/*}*/
+.exitButton {
+
 }
 
 /*!* На экранах шириной менее 700 пикселей превратить боковую панель в верхнюю панель *!*/

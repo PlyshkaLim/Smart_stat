@@ -25,7 +25,7 @@ const RegistrationFriends = () => {
                 </div>
             </div>
             <div className={p.next}>
-                <NavLink to='/main_page'>
+                <NavLink to='/calendar'>
                     <Next/>
                 </NavLink>
             </div>

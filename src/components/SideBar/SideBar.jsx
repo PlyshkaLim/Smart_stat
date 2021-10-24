@@ -6,6 +6,7 @@ import homeIcon from "../../images/homeIcon.png";
 import calendarIcon from "../../images/calendarIcon.png";
 import statIcon from "../../images/statIcon.png";
 import profileIcon from "../../images/profileIcon.png";
+import exitIcon from "../../images/exitIcon.png";
 
 
 class SideBar extends React.Component {
@@ -13,44 +14,51 @@ class SideBar extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            qwe: true,
+            buttonClose: true,
         }
         this.disableButton = this.disableButton.bind(this);
     }
 
     disableButton() {
         this.setState(prevState => ({
-            qwe: !prevState.qwe
+            buttonClose: !prevState.buttonClose
         }));
     }
 
     render() {
         return (
-            <div className={p.sideBar}>
-                <div className={this.state.qwe ? p.sidebarClose : p.sidebar}>
+            <div className={p.sideBarOpen}>
+                <div className={this.state.buttonClose ? p.sidebarClose : p.sidebarOpen}>
                     <img src={logoClose} alt={"logoClose"} className={p.logoClose}/>
-                    <img src={logoOpen} hidden={this.state.qwe} alt={"logoOpen"} className={p.logoOpen}/>
+                    <img src={logoOpen}
+                         hidden={this.state.buttonClose}
+                         alt={"logoOpen"}
+                         className={p.logoOpen}/>
                     <br/>
 
                     <button onClick={this.disableButton}
-                            className={this.state.qwe ? p.open : p.close}>
+                            className={this.state.buttonClose ? p.open : p.close}>
                     </button>
 
                     <a className={p.active} href="#home">
                         <img src={homeIcon} alt={"homeIcon"}/>
-                        <span hidden={this.state.qwe}>Главная страница</span>
+                        <span hidden={this.state.buttonClose}>Главная страница</span>
                     </a>
                     <a href="#calendar">
                         <img src={calendarIcon} alt={"calendarIcon"}/>
-                        <span hidden={this.state.qwe}>Календарь</span>
+                        <span hidden={this.state.buttonClose}>Календарь</span>
                     </a>
                     <a href="#stat">
                         <img src={statIcon} alt={"statIcon"}/>
-                        <span hidden={this.state.qwe}>Статистика</span>
+                        <span hidden={this.state.buttonClose}>Статистика</span>
                     </a>
                     <a href="#profile">
                         <img src={profileIcon} alt={"profileIcon"}/>
-                        <span hidden={this.state.qwe}>Мой профиль</span>
+                        <span hidden={this.state.buttonClose}>Мой профиль</span>
+                    </a>
+                    <a className={p.exitButton} href="#exit">
+                        <img src={exitIcon} alt={"exitIcon"}/>
+                        <span hidden={this.state.buttonClose}>Выйти</span>
                     </a>
                 </div>
             </div>
