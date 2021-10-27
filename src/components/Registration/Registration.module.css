@@ -11,27 +11,50 @@
 
 .header {
     grid-area: header;
-    width: 1175px;
+    width: 50vw;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-    font-size: 50px;
 }
+
+.topic {
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 22px;
+    background: linear-gradient(91.9deg, #6A8CAF 11.31%, #A7E9AF 80.03%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 50px 0 0 0;
+}
+
+.active {
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 22px;
+    background: linear-gradient(91.9deg, #6A8CAF 11.31%, #A7E9AF 80.03%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 50px 0 0 0;
+    border-bottom: 5px solid #6A8CAF;
+}
+
+
 .form {
     grid-area: form;
 }
+
 /*
 .previous {
     grid-area: previous;
-
 }
 
 .form {
     grid-area: form;
     width: 337px;
-
 }
 
 .number {

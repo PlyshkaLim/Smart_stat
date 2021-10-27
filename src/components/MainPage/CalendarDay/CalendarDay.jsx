@@ -1,5 +1,7 @@
 import React from "react";
 import p from "./CalendarDay.module.css";
+import Calendar from "../Calendar/Calendar";
+
 
 const CalendarDay = () => {
     return (
@@ -18,6 +20,7 @@ const CalendarDay = () => {
                 <input type="date" id="start" name="trip-start"
                        value="2018-07-22"
                        min="2018-01-01" max="2018-12-31"/>
+
             </div>
             <div className={p.calendarGroup}>
                 <div className={p.item}>
@@ -59,8 +62,10 @@ const CalendarDay = () => {
                 </div>
             </div>
             <div className={p.calendarMap}>
-                Календарик епта ;) <br/>
                 Понедельник, 14 июня
+                <div className={p.calendarLine}>
+                    <Calendar />
+                </div>
             </div>
         </div>
     )

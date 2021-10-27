@@ -58,4 +58,10 @@
 
 .calendarMap {
     grid-area: calendarMap;
+    height: 85vh;
+    /*overflow: auto;*/
+}
+.calendarLine {
+    height: 80vh;
+    overflow: auto;
 }
