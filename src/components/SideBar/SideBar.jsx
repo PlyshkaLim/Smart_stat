@@ -40,10 +40,10 @@ class SideBar extends React.Component {
                             className={this.state.buttonClose ? p.open : p.close}>
                     </button>
 
-                    <a className={p.active} href="#home">
+                    {/*<a className={p.active} href="#home">
                         <img src={homeIcon} alt={"homeIcon"}/>
                         <span hidden={this.state.buttonClose}>Главная страница</span>
-                    </a>
+                    </a>*/}
                     <a href="#calendar">
                         <img src={calendarIcon} alt={"calendarIcon"}/>
                         <span hidden={this.state.buttonClose}>Календарь</span>

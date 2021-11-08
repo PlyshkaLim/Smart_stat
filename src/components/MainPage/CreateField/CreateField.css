@@ -1,3 +1,19 @@
+.field {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9998;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.qwe {
+    margin: 0 0 0 100px;
+}
 .calendarDay {
     display: grid;
     grid-template-columns: 400px 1fr;
@@ -121,69 +137,4 @@
     box-shadow: 0px 0px 6px #DFDFDF;
     border-radius: 10px;
     border: none;
-}
-
-
-.polygon {
-    position: relative;
-    top: 18px;
-    left: 5px;
-
-    width: 0;
-    height: 0;
-    border-left: 4px solid transparent;
-    border-right: 4px solid transparent;
-
-    border-top: 7px solid #DFDFDF;
-}
-.activeLink {
-    color: #00D29D;
-}
-
-.activeLink.components {
-    color: #00B98A;
-
-}
-.submenu {
-    position: absolute;
-    display: none;
-    margin: 10px 0 10px 0;
-}
-.submenu:hover {
-
-}
-
-.submenu_item {
-    color: #302E2E;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 22px;
-    text-decoration: none;
-    align-items: center;
-}
-
-.submenu_item:hover {
-    background: #EEF9BF;
-}
-
-.react {
-    padding-left: 10px;
-    margin-right: -1px;
-}
-
-.figma {
-    padding-left: 17px;
-    margin-right: 3px;
-}
-
-#components:hover .submenu {
-    z-index: 10;
-    display: grid;
-    box-sizing: border-box;
-    grid-template-areas: "react"
-                         "figma";
-    grid-template-rows: 40px 40px;
-    grid-auto-columns: 225px;
-    background: #FFFFFF;
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
 }
