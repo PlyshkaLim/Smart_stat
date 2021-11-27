@@ -1,3 +1,12 @@
+.addMarker {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 10px 20px;
+}
+.addMarker_text {
+    align-self: center;
+    margin: 0 0 0 20px;
+}
 .submenu_item {
     color: #302E2E;
     font-size: 16px;

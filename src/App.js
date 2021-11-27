@@ -1,4 +1,5 @@
-import p from './App.css';
+import React from "react";
+import css from './App.css';
 import {
     BrowserRouter,
     Switch,
@@ -8,12 +9,11 @@ import Authorization from "./components/Authorization/Authorization";
 import Registration from "./components/Registration/Registration";
 import CalendarPage from "./components/CalendarPage/CalendarPage";
 import Profile from "./components/Profile/Profile";
-import store from "./redux/redux-store";
 
 function App() {
     return (
         <BrowserRouter>
-            <div className={p.app}>
+            <div className={css.app}>
                 <Switch>
                     <Route path="/authorization" component={Authorization}/>
                     <Route path="/registration" component={Registration}/>
@@ -25,5 +25,5 @@ function App() {
         </BrowserRouter>
     );
 }
-window.store = store;
+
 export default App;

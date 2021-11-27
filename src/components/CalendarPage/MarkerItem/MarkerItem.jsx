@@ -1,14 +1,14 @@
 import React from "react";
 import CircleSVG from "../../common/CircleSVG";
-import styles from "./MarkerItem.module.css";
+import css from "./MarkerItem.module.css";
 
 const MarkerItem = (props) => {
     return (
-        <div className={styles.item}>
-            <span className={styles.color}>
+        <div className={css.item}>
+            <span className={css.color}>
                 <CircleSVG color={props.color}/>
             </span>
-            <span className={styles.text}>
+            <span className={css.text}>
                 {props.text}
             </span>
         </div>
