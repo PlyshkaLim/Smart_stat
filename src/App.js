@@ -5,8 +5,10 @@ import {
     Route, Redirect,
 } from 'react-router-dom';
 import Authorization from "./components/Authorization/Authorization";
-import MainPage from "./components/MainPage/MainPage";
 import Registration from "./components/Registration/Registration";
+import CalendarPage from "./components/CalendarPage/CalendarPage";
+import Profile from "./components/Profile/Profile";
+import store from "./redux/redux-store";
 
 function App() {
     return (
@@ -15,12 +17,13 @@ function App() {
                 <Switch>
                     <Route path="/authorization" component={Authorization}/>
                     <Route path="/registration" component={Registration}/>
-                    <Route path="/calendar" component={MainPage}/>
+                    <Route path="/calendar" component={CalendarPage}/>
+                    <Route path="/my_profile" component={Profile}/>
                     <Redirect from="/" to="/authorization"/>
                 </Switch>
             </div>
         </BrowserRouter>
     );
 }
-
+window.store = store;
 export default App;

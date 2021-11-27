@@ -2,9 +2,9 @@ import React from "react";
 import p from "./MainPage.module.css";
 import SideBar from "../SideBar/SideBar";
 import {NavLink, Redirect, Route} from "react-router-dom";
-import CalendarDay from "./CalendarDay/CalendarDay";
-import CalendarWeek from "./CalendarWeek/CalendarWeek";
-import CalendarMonth from "./CalendarMonth/CalendarMonth";
+import CalendarDay from "../CalendarPage/CalendarDay/CalendarDay";
+import CalendarWeek from "../CalendarPage/CalendarWeek/CalendarWeek";
+import CalendarMonth from "../CalendarPage/CalendarMonth/CalendarMonth";
 
 
 const MainPage = () => {

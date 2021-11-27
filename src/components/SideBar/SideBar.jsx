@@ -2,11 +2,11 @@ import React from "react";
 import p from "./SideBar.module.css";
 import logoClose from "../../images/logoSideBarClose.png";
 import logoOpen from "../../images/logoSideBarOpen.png";
-import homeIcon from "../../images/homeIcon.png";
 import calendarIcon from "../../images/calendarIcon.png";
 import statIcon from "../../images/statIcon.png";
 import profileIcon from "../../images/profileIcon.png";
 import exitIcon from "../../images/exitIcon.png";
+import {NavLink} from "react-router-dom";
 
 
 class SideBar extends React.Component {
@@ -44,22 +44,22 @@ class SideBar extends React.Component {
                         <img src={homeIcon} alt={"homeIcon"}/>
                         <span hidden={this.state.buttonClose}>Главная страница</span>
                     </a>*/}
-                    <a href="#calendar">
+                    <NavLink to='/calendar/day'>
                         <img src={calendarIcon} alt={"calendarIcon"}/>
                         <span hidden={this.state.buttonClose}>Календарь</span>
-                    </a>
-                    <a href="#stat">
+                    </NavLink>
+                    <NavLink to='/statistic'>
                         <img src={statIcon} alt={"statIcon"}/>
                         <span hidden={this.state.buttonClose}>Статистика</span>
-                    </a>
-                    <a href="#profile">
+                    </NavLink>
+                    <NavLink to='/my_profile'>
                         <img src={profileIcon} alt={"profileIcon"}/>
                         <span hidden={this.state.buttonClose}>Мой профиль</span>
-                    </a>
-                    <a className={p.exitButton} href="#exit">
+                    </NavLink>
+                    <NavLink to='/authorization'>
                         <img src={exitIcon} alt={"exitIcon"}/>
                         <span hidden={this.state.buttonClose}>Выйти</span>
-                    </a>
+                    </NavLink>
                 </div>
             </div>
         )

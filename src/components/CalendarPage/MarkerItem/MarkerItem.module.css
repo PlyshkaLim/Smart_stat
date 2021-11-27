@@ -1,0 +1,20 @@
+.item {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 10px 20px;
+}
+
+.color {
+    height: 100%;
+}
+
+.text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    margin: 0 0 0 20px;
+}

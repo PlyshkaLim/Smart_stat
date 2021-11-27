@@ -1,0 +1,14 @@
+.profilePage {
+    font-family: sans-serif;
+    height: 100vh;
+    /*display: grid;*/
+    /*grid-template-columns: 100px 1fr;*/
+    display: flex;
+    flex-direction: row;
+
+}
+
+.sideBar {
+    min-width: 90px;
+    max-width: 300px;
+}

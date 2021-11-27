@@ -1,0 +1,309 @@
+.submenu_item {
+    color: #302E2E;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-decoration: none;
+    align-items: center;
+    padding: 5px 0 0 10px;
+}
+
+.submenu_item:hover {
+    background: #EEF9BF;
+}
+
+.vis {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9998;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+    width: 459px;
+    height: auto;
+    margin: 30px auto;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal_body {
+    margin: 31px 45px 30px 31px;
+    display: flex;
+    flex-direction: column;
+}
+
+.closeIcon {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    align-self: flex-end;
+}
+
+.heading {
+    font-family: Open Sans, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 22px;
+    color: #75B79E;
+}
+
+.input input {
+    width: 370px;
+    height: 30px;
+    margin: 44px 0 0 0;
+    padding: 6px 0 5px 12px;
+    box-shadow: 0 0 6px #DFDFDF;
+    border-radius: 10px;
+    border: none;
+    font-size: 13px;
+    color: #ADADAD;
+}
+
+.modal .radio {
+    margin: 24px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: SF Pro Display, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.modal .date {
+    margin: 27px 0 0 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.modal .clockIcon {
+
+}
+
+.modal .dateMain {
+    margin: 0 0 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal .dateTime {
+    display: flex;
+    flex-direction: row;
+}
+
+.modal .dateInput input {
+    width: 196px;
+    height: 33px;
+    margin: 0 0 0 0;
+    padding: 0 0 0 12px;
+    box-shadow: 0 0 6px #DFDFDF;
+    border-radius: 10px;
+    border: none;
+    font-size: 13px;
+    color: #ADADAD;
+}
+
+.modal .timeInput input {
+    width: 119px;
+    height: 33px;
+    margin: 0 0 0 13px;
+    padding: 0 0 0 12px;
+    box-shadow: 0 0 6px #DFDFDF;
+    border-radius: 10px;
+    border: none;
+    font-size: 13px;
+    color: #ADADAD;
+}
+
+.modal .checkbox {
+    margin: 20px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    height: 20px;
+    align-items: center;
+}
+
+.modal .checkboxText {
+    margin: 0 0 0 7px;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    color: #313131;
+}
+
+.modal .select select {
+    width: 273px;
+    height: 33px;
+    margin: 20px 0 0 0;
+    padding: 0 0 0 12px;
+    box-shadow: 0 0 6px #DFDFDF;
+    border-radius: 10px;
+    border: none;
+    font-size: 13px;
+    color: #242424;
+    font-family: SF Pro Displa, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 22px;
+}
+
+.participant {
+    margin: 23px 0 0 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.participantIcon {
+
+}
+
+.participantSelect {
+    height: 33px;
+    width: 273px;
+    margin: 0 0 0 20px;
+    padding: 0 0 0 12px;
+    box-shadow: 0 0 6px #DFDFDF;
+    border-radius: 10px;
+    border: none;
+    font-size: 13px;
+    color: #242424;
+    font-family: SF Pro Displa, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 22px;
+}
+
+.modal .marker select {
+    width: 383px;
+    height: 33px;
+    margin: 23px 0 0 0;
+    padding: 0 0 0 12px;
+    box-shadow: 0 0 6px #DFDFDF;
+    border-radius: 10px;
+    border: none;
+    font-size: 13px;
+    color: #ADADAD;
+    font-family: SF Pro Displa, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 22px;
+}
+
+.reminder {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 30px;
+    margin: 28px 0 0 0;
+}
+
+.reminderText {
+    font-family: SF Pro Display, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 22px;
+    color: #ADADAD;
+    align-self: center;
+}
+
+.reminderToggleButton {
+    height: 30px;
+}
+
+.reminderTime select {
+    width: 383px;
+    height: 33px;
+    margin: 23px 0 0 0;
+    padding: 0 0 0 12px;
+    box-shadow: 0 0 6px #DFDFDF;
+    border-radius: 10px;
+    border: none;
+    font-size: 13px;
+    color: #ADADAD;
+    font-family: SF Pro Display, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 22px;
+}
+
+.selectWorkoutPlan select {
+    width: 383px;
+    height: 33px;
+    margin: 33px 0 0 0;
+    padding: 0 0 0 12px;
+    box-shadow: 0 0 6px #DFDFDF;
+    border-radius: 10px;
+    border: none;
+    font-size: 13px;
+    color: #ADADAD;
+    font-family: SF Pro Display, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 22px;
+}
+
+.comment textarea {
+    width: 383px;
+    height: 87px;
+    margin: 33px 0 0 0;
+    padding: 12px 0 0 12px;
+    box-shadow: 0 0 6px #DFDFDF;
+    border-radius: 10px;
+    border: none;
+    font-size: 13px;
+    color: #ADADAD;
+    font-family: SF Pro Display, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 22px;
+}
+
+.modal .buttons {
+    margin: 40px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.buttonSave {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    width: 105px;
+    height: 32px;
+    border: none;
+    background: #75B79E;
+    border-radius: 4px;
+    margin: 0 20px 0 0;
+}
+
+.buttonCancel {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #313131;
+    width: 105px;
+    height: 32px;
+    border: 1px solid #313131;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
