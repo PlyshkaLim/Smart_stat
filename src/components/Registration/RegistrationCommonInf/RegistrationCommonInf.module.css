@@ -1,16 +1,19 @@
 .registration {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 28vw 15vw 26vw 30vw;
+    grid-template-columns: minmax(5vw, 28vw) 15vw 26vw minmax(5vw, 30vw);
     grid-template-areas: "previous number form next";
     margin: 50px 0 0 0;
 }
+
 .previous {
     justify-self: end;
 }
+
 .number {
     justify-self: end;
 }
+
 .form {
     grid-area: form;
     width: 337px;
@@ -42,6 +45,7 @@
     font-size: 12px;
     color: #ADADAD;
 }
+
 .next {
     grid-area: next;
 }
